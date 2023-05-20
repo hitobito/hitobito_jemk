@@ -4,7 +4,7 @@ namespace :app do
   namespace :license do
     task :config do # rubocop:disable Rails/RakeEnvironment
       @licenser = Licenser.new('hitobito_jemk',
-                               'TODO: Customer Name',
+                               'Jungschar EMK',
                                'https://github.com/hitobito/hitobito_jemk')
     end
   end

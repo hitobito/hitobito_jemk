@@ -5,16 +5,14 @@ require 'hitobito_jemk/version'
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  # rubocop:disable SingleSpaceBeforeFirstArg
   s.name        = 'hitobito_jemk'
   s.version     = HitobitoJemk::VERSION
-  s.authors     = ['Your name']
-  s.email       = ['Your email']
+  s.authors     = ['Matthias Viehweger']
+  s.email       = ['viehweger@puzzle.ch']
   # s.homepage    = 'TODO'
-  s.summary     = 'Jemk'
-  s.description = 'Wagon description'
+  s.summary     = 'Hitobito JEMK'
+  s.description = 'Hitobito der Jungschar der Evangelisch-Methodistischen Kirche'
 
   s.files = Dir['{app,config,db,lib}/**/*'] + ['Rakefile']
   s.test_files = Dir['test/**/*']
-  # rubocop:enable SingleSpaceBeforeFirstArg
 end
