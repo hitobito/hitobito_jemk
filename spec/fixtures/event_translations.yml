@@ -1,0 +1,15 @@
+top_event_de:
+  event_id: 
+  locale: de
+  created_at: 
+  updated_at: 
+
+  name: Top Event
+
+top_course_de:
+  event_id: 
+  locale: de
+  created_at: 
+  updated_at: 
+
+  name: Top Course

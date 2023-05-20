@@ -1,0 +1,110 @@
+login_de:
+  custom_content_id: 
+  locale: de
+  label: Login senden
+  subject: "Willkommen bei "
+  created_at: 
+  updated_at: 
+
+login_fr:
+  custom_content_id: 
+  locale: fr
+  label: Login E-Mail
+  subject: Tes informations login
+  created_at: 
+  updated_at: 
+
+notes:
+  custom_content_id: 
+  locale: de
+  label: Any Notes
+  created_at: 
+  updated_at: 
+
+bulk_mail_success_de:
+  custom_content_id: 
+  locale: de
+  label: 'Sendebericht Abo'
+  subject: 'Sendebericht Mail an {mail-to}'
+  created_at: 
+  updated_at: 
+
+bulk_mail_with_failed_de:
+  custom_content_id: 
+  locale: de
+  label: Sendebericht Abo nicht alle erfolgreich,
+  subject: Sendebericht Mail an {mail-to}
+  created_at: 
+  updated_at: 
+
+content_invoice_notification:
+  custom_content_id: 
+  locale: de
+  label: Rechnung
+  subject: Rechnung {invoice-number} von {group-name}
+  created_at: 
+  updated_at: 
+
+person_add_request_person:
+  custom_content_id: 
+  locale: de
+  label: 'Anfrage Personendaten: E-Mail Freigabe durch Person'
+  subject: Freigabe deiner Personendaten
+  created_at: 
+  updated_at: 
+
+person_add_request_responsibles:
+  custom_content_id: 
+  locale: de
+  label: 'Anfrage Personendaten: E-Mail Freigabe durch Verantwortliche'
+  subject: Freigabe Personendaten
+  created_at: 
+  updated_at: 
+
+person_add_request_approved:
+  custom_content_id: 
+  locale: de
+  label: 'Anfrage Personendaten: E-Mail Freigabe akzeptiert'
+  subject: Freigabe der Personendaten akzeptiert
+  created_at: 
+  updated_at: 
+
+person_add_request_rejected:
+  custom_content_id: 
+  locale: de
+  label: 'Anfrage Personendaten: E-Mail Freigabe abgelehnt'
+  subject: Freigabe der Personendaten abgelehnt
+  created_at: 
+  updated_at: 
+
+address_validation_checks:
+  custom_content_id: 
+  locale: de
+  label: 'Addressen Validations Checks'
+  subject: Address Validierungen
+  created_at: 
+  updated_at: 
+
+assignment_assignee_notification:
+  custom_content_id: 
+  locale: de
+  label: 'Auftrag erhalten'
+  subject: Druckauftrag erhalten
+  created_at: 
+  updated_at: 
+
+self_registration_notification:
+  custom_content_id: 
+  locale: de
+  label: 'Benachrichtigung Selbstregistrierung'
+  subject: 'Benachrichtigung Selbstregistrierung'
+  created_at: 
+  updated_at: 
+
+content_user_password_override:
+  custom_content_id: 
+  locale: de
+  label: Login verhindert,
+  subject: Login für hitobito von Top Leader verhindert,
+  created_at: 
+  updated_at: 
