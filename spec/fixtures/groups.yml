@@ -9,7 +9,7 @@ root:
   lft: 1
   rgt: 2
   name: Hauptgruppe
-  type: Group::Root
+  type: Group::Dachverband
   email: root@example.net
   address: Ophovener Str. 79a
   zip_code: 2843

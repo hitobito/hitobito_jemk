@@ -6,4 +6,4 @@
 #  https://github.com/hitobito/hitobito_jemk.
 
 
-Group::Root.seed_once(:parent_id, name: 'Hauptgruppe')
+Group::Dachverband.seed_once(:parent_id, name: 'Dachverband JEMK')
