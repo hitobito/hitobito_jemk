@@ -5,15 +5,16 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_jemk.
 
-module Jemk::Group
-  extend ActiveSupport::Concern
-
-  included do
-    # Define additional used attributes
-    # self.used_attributes += [:website, :bank_account, :description]
-    # self.superior_attributes = [:bank_account]
-
-    root_types Group::Dachverband
+class Group::LagervereinVerein < ::Group
+  class Leiter < ::Role
+    self.permissions = [:layer_read, :group_and_below_full, :contact_data]
   end
 
+  class Kassier < ::Role
+    self.permissions = [:layer_read, :finance]
+  end
+
+  class Mitglied < ::Role
+    self.permissions = [:layer_read]
+  end
 end
