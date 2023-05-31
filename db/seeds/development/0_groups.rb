@@ -6,20 +6,32 @@
 #  https://github.com/hitobito/hitobito_jemk.
 
 
-require Rails.root.join('db', 'seeds', 'support', 'group_seeder')
-
-seeder = GroupSeeder.new
-
 root = Group.roots.first
-srand(42)
 
-if root.address.blank?
-  root.update(seeder.group_attributes)
-  root.default_children.each do |child_class|
-    child_class.first.update(seeder.group_attributes)
-  end
-end
+result = Group::Lagerverein.seed_once(:name, parent_id: root.id, name: 'Frühlingslager', short_name: 'FrüLa')
+fruela = result.first
+Group::LagervereinVerein.seed_once(:name, parent_id: fruela.id, name: 'Mädchen FrüLa', short_name: 'Mädchen')
+Group::LagervereinVerein.seed_once(:name, parent_id: fruela.id, name: 'Knaben FrüLa', short_name: 'Knaben')
 
-# TODO: define more groups
+result = Group::Region.seed_once(:name, parent_id: root.id, name: 'Bärn', short_name: 'BE')
+bern = result.first
+Group::Ortsjungschar.seed_once(:name, parent_id: bern.id, name: 'JS Arcus')
+Group::Ortsjungschar.seed_once(:name, parent_id: bern.id, name: 'JS Gilboa')
+Group::Ortsjungschar.seed_once(:name, parent_id: bern.id, name: 'JS Terra Nova')
+
+result = Group::Region.seed_once(:name, parent_id: root.id, name: 'Aargau', short_name: 'AG')
+aargau = result.first
+Group::Ortsjungschar.seed_once(:name, parent_id: aargau.id, name: 'JS Kyburg')
+Group::Ortsjungschar.seed_once(:name, parent_id: aargau.id, name: 'JS Robi')
+
+# require Rails.root.join('db', 'seeds', 'support', 'group_seeder')
+# seeder = GroupSeeder.new
+# srand(42)
+# if root.address.blank?
+#   root.update(seeder.group_attributes)
+#   root.default_children.each do |child_class|
+#     child_class.first.update(seeder.group_attributes)
+#   end
+# end
 
 Group.rebuild!
