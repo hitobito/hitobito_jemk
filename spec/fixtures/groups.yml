@@ -3,17 +3,287 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_jemk.
 
-
 root:
   parent:
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
   lft: 1
-  rgt: 2
-  name: Hauptgruppe
+  rgt: 70
+  name: Dachverband JEMK
   type: Group::Dachverband
-  email: root@example.net
-  address: Ophovener Str. 79a
-  zip_code: 2843
-  town: Neu Carlscheid
-  layer_group_id: <%= ActiveRecord::FixtureSet.identify(:root) %>
 
-# TODO add more groups
+vorstand_2:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 68
+  rgt: 69
+  name: Vorstand
+  type: Group::DachverbandVorstand
+
+geschaeftsstelle_3:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 64
+  rgt: 65
+  name: Geschäftsstelle
+  type: Group::DachverbandGeschaeftsstelle
+
+mitglieder_4:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:root)%>"
+  lft: 66
+  rgt: 67
+  name: Mitglieder
+  type: Group::DachverbandMitglieder
+
+fruela:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:fruela)%>"
+  lft: 58
+  rgt: 63
+  name: Frühlingslager
+  short_name: FrüLa
+  type: Group::Lagerverein
+
+maedchen:
+  parent: fruela
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:fruela)%>"
+  lft: 61
+  rgt: 62
+  name: Mädchen FrüLa
+  short_name: Mädchen
+  type: Group::LagervereinVerein
+
+knaben:
+  parent: fruela
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:fruela)%>"
+  lft: 59
+  rgt: 60
+  name: Knaben FrüLa
+  short_name: Knaben
+  type: Group::LagervereinVerein
+
+be:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:be)%>"
+  lft: 26
+  rgt: 57
+  name: Bärn
+  short_name: BE
+  type: Group::Region
+
+vorstand_9:
+  parent: be
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:be)%>"
+  lft: 55
+  rgt: 56
+  name: Vorstand
+  type: Group::RegionVorstand
+
+geschaeftsstelle_10:
+  parent: be
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:be)%>"
+  lft: 27
+  rgt: 28
+  name: Geschäftsstelle
+  type: Group::RegionGeschaeftsstelle
+
+mitglieder_11:
+  parent: be
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:be)%>"
+  lft: 53
+  rgt: 54
+  name: Mitglieder
+  type: Group::RegionMitglieder
+
+js_arcus:
+  parent: be
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_arcus)%>"
+  lft: 29
+  rgt: 36
+  name: JS Arcus
+  type: Group::Ortsjungschar
+
+vorstand_13:
+  parent: js_arcus
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_arcus)%>"
+  lft: 34
+  rgt: 35
+  name: Vorstand
+  type: Group::OrtsjungscharVorstand
+
+gremium_projektgruppe_14:
+  parent: js_arcus
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_arcus)%>"
+  lft: 30
+  rgt: 31
+  name: Gremium / Projektgruppe
+  type: Group::OrtsjungscharGremium
+
+mitglieder_15:
+  parent: js_arcus
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_arcus)%>"
+  lft: 32
+  rgt: 33
+  name: Mitglieder
+  type: Group::OrtsjungscharMitglieder
+
+js_gilboa:
+  parent: be
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_gilboa)%>"
+  lft: 37
+  rgt: 44
+  name: JS Gilboa
+  type: Group::Ortsjungschar
+
+vorstand_17:
+  parent: js_gilboa
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_gilboa)%>"
+  lft: 42
+  rgt: 43
+  name: Vorstand
+  type: Group::OrtsjungscharVorstand
+
+gremium_projektgruppe_18:
+  parent: js_gilboa
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_gilboa)%>"
+  lft: 38
+  rgt: 39
+  name: Gremium / Projektgruppe
+  type: Group::OrtsjungscharGremium
+
+mitglieder_19:
+  parent: js_gilboa
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_gilboa)%>"
+  lft: 40
+  rgt: 41
+  name: Mitglieder
+  type: Group::OrtsjungscharMitglieder
+
+js_terra_nova:
+  parent: be
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_terra_nova)%>"
+  lft: 45
+  rgt: 52
+  name: JS Terra Nova
+  type: Group::Ortsjungschar
+
+vorstand_21:
+  parent: js_terra_nova
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_terra_nova)%>"
+  lft: 50
+  rgt: 51
+  name: Vorstand
+  type: Group::OrtsjungscharVorstand
+
+gremium_projektgruppe_22:
+  parent: js_terra_nova
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_terra_nova)%>"
+  lft: 46
+  rgt: 47
+  name: Gremium / Projektgruppe
+  type: Group::OrtsjungscharGremium
+
+mitglieder_23:
+  parent: js_terra_nova
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_terra_nova)%>"
+  lft: 48
+  rgt: 49
+  name: Mitglieder
+  type: Group::OrtsjungscharMitglieder
+
+ag:
+  parent: root
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:ag)%>"
+  lft: 2
+  rgt: 25
+  name: Aargau
+  short_name: AG
+  type: Group::Region
+
+vorstand_25:
+  parent: ag
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:ag)%>"
+  lft: 23
+  rgt: 24
+  name: Vorstand
+  type: Group::RegionVorstand
+
+geschaeftsstelle_26:
+  parent: ag
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:ag)%>"
+  lft: 3
+  rgt: 4
+  name: Geschäftsstelle
+  type: Group::RegionGeschaeftsstelle
+
+mitglieder_27:
+  parent: ag
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:ag)%>"
+  lft: 21
+  rgt: 22
+  name: Mitglieder
+  type: Group::RegionMitglieder
+
+js_kyburg:
+  parent: ag
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_kyburg)%>"
+  lft: 5
+  rgt: 12
+  name: JS Kyburg
+  type: Group::Ortsjungschar
+
+vorstand_29:
+  parent: js_kyburg
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_kyburg)%>"
+  lft: 10
+  rgt: 11
+  name: Vorstand
+  type: Group::OrtsjungscharVorstand
+
+gremium_projektgruppe_30:
+  parent: js_kyburg
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_kyburg)%>"
+  lft: 6
+  rgt: 7
+  name: Gremium / Projektgruppe
+  type: Group::OrtsjungscharGremium
+
+mitglieder_31:
+  parent: js_kyburg
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_kyburg)%>"
+  lft: 8
+  rgt: 9
+  name: Mitglieder
+  type: Group::OrtsjungscharMitglieder
+
+js_robi:
+  parent: ag
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_robi)%>"
+  lft: 13
+  rgt: 20
+  name: JS Robi
+  type: Group::Ortsjungschar
+
+vorstand_33:
+  parent: js_robi
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_robi)%>"
+  lft: 18
+  rgt: 19
+  name: Vorstand
+  type: Group::OrtsjungscharVorstand
+
+gremium_projektgruppe_34:
+  parent: js_robi
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_robi)%>"
+  lft: 14
+  rgt: 15
+  name: Gremium / Projektgruppe
+  type: Group::OrtsjungscharGremium
+
+mitglieder_35:
+  parent: js_robi
+  layer_group_id: "<%=ActiveRecord::FixtureSet.identify(:js_robi)%>"
+  lft: 16
+  rgt: 17
+  name: Mitglieder
+  type: Group::OrtsjungscharMitglieder
