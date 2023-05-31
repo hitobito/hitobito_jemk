@@ -39,7 +39,7 @@ class Group::Ortsjungschar < ::Group
     self.permissions = [:layer_read, :finance]
   end
 
-  class Materialverwantwortlicher < ::Role
+  class Materialverantwortlicher < ::Role
     self.permissions = [:layer_and_below_read, :contact_data]
   end
 
@@ -51,6 +51,6 @@ class Group::Ortsjungschar < ::Group
     self.permissions = []
   end
 
-  roles Hauptleiter, Leiter, Adressverwalter, Coach, Kassier, Materialverwantwortlicher,
+  roles Hauptleiter, Leiter, Adressverwalter, Coach, Kassier, Materialverantwortlicher,
         Aktivmitglied, Passivmitglied
 end

@@ -10,9 +10,9 @@ class Group::RegionGeschaeftsstelle < ::Group
     self.permissions = [:layer_and_below_full, :finance, :contact_data]
   end
 
-  class Angesteller < ::Role
+  class Angestellter < ::Role
     self.permissions = [:layer_and_below_full, :finance, :contact_data]
   end
 
-  roles Geschaeftsleiter, Angesteller
+  roles Geschaeftsleiter, Angestellter
 end
