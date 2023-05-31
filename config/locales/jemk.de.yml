@@ -1,0 +1,245 @@
+#  Copyright (c) 2012-2023, Jungschar EMK. This file is part of
+#  hitobito_jemk and licensed under the Affero General Public License version 3
+#  or later. See the COPYING file at the top-level directory or at
+#  https://github.com/hitobito/hitobito_jemk.
+
+de:
+  activerecord:
+    models:
+
+      ### GROUPS
+
+      group/dachverband:
+        one: Dachverband
+        other: Dachverbände
+
+      group/dachverband_vorstand:
+        one: Vorstand
+        other: Vorstände
+
+      group/dachverband_geschaeftsstelle:
+        one: Geschäftsstelle
+        other: Geschäftsstellen
+
+      group/dachverband_gremium:
+        one: Gremium
+        other: Gremien
+
+      group/dachverband_mitglieder:
+        one: Mitglieder
+        other: Mitglieder
+
+      group/region:
+        one: Region
+        other: Regionen
+
+      group/region_vorstand:
+        one: Vorstand
+        other: Vorstände
+
+      group/region_geschaeftsstelle:
+        one: Geschäftsstelle
+        other: Geschäftsstellen
+
+      group/region_gremium:
+        one: Gremium
+        other: Gremien
+
+      group/region_mitglieder:
+        one: Mitglieder
+        other: Mitglieder
+
+      group/lagerverein:
+        one: Lagerverein
+        other: Lagervereine
+
+      group/lagerverein_verein:
+        one: Verein
+        other: Vereine
+
+      group/ortsjungschar:
+        one: Ortsjungschar
+        other: Ortsjungscharen
+
+      group/ortsjungschar_vorstand:
+        one: Vorstand
+        other: Vorstände
+
+      group/ortsjungschar_gremium:
+        one: Gremium / Projektgruppe
+        other: Gremien / Projektgruppen
+
+      group/ortsjungschar_mitglieder:
+        one: Mitglieder
+        other: Mitglieder
+
+
+      ### ROLES
+
+      group/dachverband/administrator:
+        one: Administrator/-in
+        # description: TODO
+
+      group/dachverband_vorstand/praesident:
+        one: Präsident/-in
+        # description: TODO
+
+      group/dachverband_vorstand/kassier:
+        one: Kassier/-in
+        # description: TODO
+
+      group/dachverband_vorstand/mitglied:
+        one: Mitglied
+        # description: TODO
+
+      group/dachverband_geschaeftsstelle/geschaeftsleiter:
+        one: Geschäftsleiter/-in
+        # description: TODO
+
+      group/dachverband_geschaeftsstelle/angestellter:
+        one: Angestellte/-r
+        # description: TODO
+
+      group/dachverband_gremium/leiter:
+        one: Leiter/-in
+        # description: TODO
+
+      group/dachverband_gremium/kassier:
+        one: Kassier/-in
+        # description: TODO
+
+      group/dachverband_gremium/mitglied:
+        one: Mitglied
+        # description: TODO
+
+      group/dachverband_mitglieder/adressverwalter:
+        one: Adressverwalter/-in
+        # description: TODO
+
+      group/dachverband_mitglieder/mitglied:
+        one: Mitglied
+        # description: TODO
+
+      group/region/administrator:
+        one: Administrator/-in
+        # description: TODO
+
+      group/region_vorstand/praesident:
+        one: Präsident/-in
+        # description: TODO
+
+      group/region_vorstand/kassier:
+        one: Kassier/-in
+        # description: TODO
+
+      group/region_vorstand/mitglied:
+        one: Mitglied
+        # description: TODO
+
+      group/region_geschaeftsstelle/geschaeftsleiter:
+        one: Geschäftsleiter/-in
+        # description: TODO
+
+      group/region_geschaeftsstelle/angestellter:
+        one: Angestellte/-r
+        # description: TODO
+
+      group/region_gremium/leiter:
+        one: Leiter/-in
+        # description: TODO
+
+      group/region_gremium/kassier:
+        one: Kassier/-in
+        # description: TODO
+
+      group/region_gremium/mitglied:
+        one: Mitglied
+        # description: TODO
+
+      group/region_mitglieder/adressverwalter:
+        one: Adressverwalter/-in
+        # description: TODO
+
+      group/region_mitglieder/mitglied:
+        one: Mitglied
+        # description: TODO
+
+      group/lagerverein/administrator:
+        one: Administrator/-in
+        # description: TODO
+
+      group/lagerverein_verein/leiter:
+        one: Leiter/-in
+        # description: TODO
+
+      group/lagerverein_verein/kassier:
+        one: Kassier/-in
+        # description: TODO
+
+      group/lagerverein_verein/mitglied:
+        one: Mitglied
+        # description: TODO
+
+      group/ortsjungschar/hauptleiter:
+        one: Hauptleitung
+        # description: TODO
+
+      group/ortsjungschar/leiter:
+        one: Leiter/-in
+        # description: TODO
+
+      group/ortsjungschar/adressverwalter:
+        one: Adressverwaltung
+        # description: TODO
+
+      group/ortsjungschar/coach:
+        one: Coach
+        # description: TODO
+
+      group/ortsjungschar/kassier:
+        one: Kassier
+        # description: TODO
+
+      group/ortsjungschar/materialverantwortlicher:
+        one: Materialverantwortliche/-r
+        # description: TODO
+
+      group/ortsjungschar/aktivmitglied:
+        one: Aktivmitglied
+        # description: TODO
+
+      group/ortsjungschar/passivmitglied:
+        one: Passivmitglied
+        # description: TODO
+
+      group/ortsjungschar_vorstand/praesident:
+        one: Präsident/-in
+        # description: TODO
+
+      group/ortsjungschar_vorstand/sekretaer:
+        one: Sekretär/-in
+        # description: TODO
+
+      group/ortsjungschar_vorstand/mitglied:
+        one: Vorstandsmitglied
+        # description: TODO
+
+      group/ortsjungschar_gremium/leiter:
+        one: Leiter/-in
+        # description: TODO
+
+      group/ortsjungschar_gremium/mitglied:
+        one: Mitglied
+        # description: TODO
+
+      group/ortsjungschar_mitglieder/leiter:
+        one: Leiter/-in
+        # description: TODO
+
+      group/ortsjungschar_mitglieder/aktivmitglied:
+        one: Aktivmitglied
+        # description: TODO
+
+      group/ortsjungschar_mitglieder/passivmitglied:
+        one: Passivmitglied
+        # description: TODO
