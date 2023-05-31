@@ -1,4 +1,6 @@
-$LOAD_PATH.push File.expand_path('../lib', __FILE__)
+# frozen_string_literal: true
+
+$LOAD_PATH.push File.expand_path('lib', __dir__)
 
 # Maintain your wagon's version:
 require 'hitobito_jemk/version'
@@ -15,4 +17,8 @@ Gem::Specification.new do |s|
 
   s.files = Dir['{app,config,db,lib}/**/*'] + ['Rakefile']
   s.test_files = Dir['test/**/*']
+
+  s.required_ruby_version = '>= 2.7'
+
+  s.add_dependency 'hitobito_youth'
 end
