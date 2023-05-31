@@ -12,7 +12,14 @@ class Group::Region < ::Group
   children Group::RegionVorstand,
            Group::RegionGeschaeftsstelle,
            Group::RegionGremium,
-           Group::RegionMitglieder
+           Group::RegionMitglieder,
+           Group::Ortsjungschar
+
+  self.default_children = [
+    Group::RegionVorstand,
+    Group::RegionGeschaeftsstelle,
+    Group::RegionMitglieder
+  ]
 
   ### ROLES
 

@@ -11,6 +11,11 @@ class Group::Ortsjungschar < ::Group
   children Group::OrtsjungscharVorstand,
            Group::OrtsjungscharGremium,
            Group::OrtsjungscharMitglieder
+  self.default_children = [
+    Group::OrtsjungscharVorstand,
+    Group::OrtsjungscharGremium,
+    Group::OrtsjungscharMitglieder
+  ]
 
   ### ROLES
 

@@ -12,7 +12,15 @@ class Group::Dachverband < ::Group
   children Group::DachverbandVorstand,
            Group::DachverbandGeschaeftsstelle,
            Group::DachverbandGremium,
-           Group::DachverbandMitglieder
+           Group::DachverbandMitglieder,
+           Group::Lagerverein,
+           Group::Region
+
+  self.default_children = [
+    Group::DachverbandVorstand,
+    Group::DachverbandGeschaeftsstelle,
+    Group::DachverbandMitglieder
+  ]
 
   ### ROLES
 
