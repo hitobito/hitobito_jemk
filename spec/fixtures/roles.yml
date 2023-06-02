@@ -13,7 +13,7 @@ admin:
 leader:
   person: leader
   group: root
-  type: Group::Ortsjungschar::Hauptleitung
+  type: Group::Ortsjungschar::Hauptleiter
 
 # TODO use group of the main base member
 member:
