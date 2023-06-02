@@ -7,6 +7,13 @@
 # Settings relevant for the hitobito_jemk wagon
 # Overrides settings from the main application
 application:
+  logo:
+    height: 80
+    width: 230
+    background_color: "#ffffff"
+  footer:
+    logo_image: logo_ball.png
+    logo_url: https://jemk.ch
   languages:
     de: Deutsch
 
