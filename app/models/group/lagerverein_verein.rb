@@ -17,4 +17,6 @@ class Group::LagervereinVerein < ::Group
   class Mitglied < ::Role
     self.permissions = [:layer_read]
   end
+
+  roles Leiter, Kassier, Mitglied
 end
