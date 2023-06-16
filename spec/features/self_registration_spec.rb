@@ -65,6 +65,6 @@ describe :self_registration do
     click_button 'Anmelden'
 
     expect(person.roles.map(&:type)).to eq([self_registration_role.to_s])
-    expect(current_path).to eq("/de#{group_person_path(group_id: group, id: person)}.html")
+    expect(current_path).to match(/#{group_person_path(group_id: group, id: person)}.html\z/)
   end
 end

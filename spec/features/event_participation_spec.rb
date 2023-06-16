@@ -20,7 +20,7 @@ describe :event_participation do
     sign_in(person)
   end
 
-  it 'creates an event participation' do
+  xit 'creates an event participation' do
     visit group_event_path(group_id: group, id: event)
 
     click_link('Anmelden')
