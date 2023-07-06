@@ -243,3 +243,7 @@ de:
       group/ortsjungschar_mitglieder/passivmitglied:
         one: Passivmitglied
         # description: TODO
+
+    attributes:
+      person:
+        nickname: Jungscharname
