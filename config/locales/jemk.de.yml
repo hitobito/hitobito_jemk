@@ -244,6 +244,20 @@ de:
         one: Passivmitglied
         # description: TODO
 
+      event/camp:
+        one: Lager
+        other: Lager
+
     attributes:
       person:
         nickname: Jungscharname
+
+  events:
+    global:
+      link:
+        add_event/camp: Lager erstellen
+    new:
+      title_event/camp: Lager erstellen
+
+  navigation:
+    camps: Lager

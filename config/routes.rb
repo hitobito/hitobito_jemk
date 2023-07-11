@@ -13,6 +13,15 @@ Rails.application.routes.draw do
   language_scope do
     # Define wagon routes here
 
+    resources :groups do
+      resources :events, only: [] do # do not redefine events actions, only add new ones
+        collection do
+          get 'camp' => 'events#index', type: 'Event::Camp'
+        end
+      end
+    end
+
+    get 'list_camps' => 'event/lists#camps', as: :list_camps
   end
 
 end

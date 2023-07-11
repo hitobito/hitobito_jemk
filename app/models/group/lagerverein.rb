@@ -11,6 +11,11 @@ class Group::Lagerverein < ::Group
 
   children Group::LagervereinVerein
 
+  self.event_types = [
+    Event,
+    Event::Camp
+  ]
+
   ### ROLES
 
   class Administrator < ::Role

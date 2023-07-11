@@ -17,6 +17,11 @@ class Group::Ortsjungschar < ::Group
     Group::OrtsjungscharMitglieder
   ]
 
+  self.event_types = [
+    Event,
+    Event::Camp
+  ]
+
   ### ROLES
 
   class Hauptleiter < ::Role

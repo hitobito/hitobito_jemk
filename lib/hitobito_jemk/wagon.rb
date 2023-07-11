@@ -22,7 +22,35 @@ module HitobitoJemk
 
     config.to_prepare do
       # extend application classes here
+
+      # Models
       Group.include Jemk::Group
+
+      # Abilities
+      GroupAbility.include Jemk::GroupAbility
+      EventAbility.abilities[Event::Camp] =
+        EventAbility.abilities[Event] # Camp has same abilities as event
+
+      # Decorators
+      EventDecorator.icons['Event::Camp'] = :campground
+
+      # Sheets
+      Sheet::Group.include Jemk::Sheet::Group
+      Sheet::Event::List.include Jemk::Sheet::Event::List
+
+      # Controllers
+      Event::ListsController.prepend Jemk::Event::ListsController
+
+      # Main navigation
+      index_courses = NavigationHelper::MAIN.index { |opts| opts[:label] == :courses }
+      NavigationHelper::MAIN.insert(
+        index_courses + 1,
+        label: :camps,
+        icon_name: :campground,
+        url: :list_camps_path,
+        active_for: %w(list_camps),
+        if: ->(_) { can?(:list_available, Event::Camp) }
+      )
     end
 
     initializer 'jemk.add_settings' do |_app|
