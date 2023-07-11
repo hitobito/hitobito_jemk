@@ -21,6 +21,11 @@ class Group::Region < ::Group
     Group::RegionMitglieder
   ]
 
+  self.event_types = [
+    Event,
+    Event::Course
+  ]
+
   ### ROLES
 
   class Administrator < ::Role
