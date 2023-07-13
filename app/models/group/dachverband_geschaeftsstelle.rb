@@ -8,10 +8,12 @@
 class Group::DachverbandGeschaeftsstelle < ::Group
   class Geschaeftsleiter < ::Role
     self.permissions = [:admin, :layer_and_below_full, :impersonation, :contact_data]
+    self.two_factor_authentication_enforced = true
   end
 
   class Angestellter < ::Role
     self.permissions = [:admin, :layer_and_below_full, :impersonation, :contact_data]
+    self.two_factor_authentication_enforced = true
   end
 
   roles Geschaeftsleiter, Angestellter
