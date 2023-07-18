@@ -6,9 +6,6 @@
 #  https://github.com/hitobito/hitobito_jemk.
 
 module Jemk::Event::ListsController
-  # def prepended(klass)
-  #   klass.skip_authorize_resource only: [:camps]
-  # end
 
   def camps
     authorize!(:list_available, Event::Camp)
