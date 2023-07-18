@@ -27,15 +27,18 @@ $white:                 #fff !default;
 
 // Colors
 // ----------------------------
-$blue:                  #329897 !default;
+
+$jemk_darkgreen:        darken($jemk_green, 20%);
+
+$blue:                  $emk_darkblue;
 $blueDark:              darken($blue, 10%) !default;
-$green:                 #8DB850 !default;
-$greenDark:             darken($green, 10%) !default;
+$green:                 $jemk_green !default;
+$greenDark:             $jemk_darkgreen;
 
 $orange:                #DC795B;
 $orangeDark:            #C75B3B;
-$purple:                $jemk_darkblue; // #925D97;
-$purpleDark:            darken($jemk_darkblue, 20%); //#6A396F;
+$purple:                $jemk_darkblue;
+$purpleDark:            darken($jemk_darkblue, 20%);
 
 $red:                   $orange !default;
 
@@ -49,7 +52,7 @@ $bodyBackground:        $jemk_darkblue;
 
 $focusColor:            $purple;
 $shadowColor:           darken($pageBackground, 10%);
-$linkColor:             $jemk_green !default;
+$linkColor:             $jemk_darkgreen !default;
 $linkColorHover:        $jemk_darkblue !default;
 
 $footerColor:           $jemk_black;
