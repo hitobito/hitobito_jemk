@@ -12,17 +12,17 @@
 $jemk_green:            #9bcd65 !default;
 $jemk_darkblue:         #003976 !default;
 $jemk_black:            #000000 !default;
-$emk_darkblue:          #00427b !default;
-$emk_lightblue:         #ccd7e0 !default;
+$jemk_darkblue:          #00427b !default;
+$jemk_lightblue:         #ccd7e0 !default;
 
 // Grays
 // -------------------------
 $black:                 #474E5D !default;
-$grayDarker:            #797E89 !default;
-$grayDark:              #8b8b8b !default;
+$gray-darker:           #797E89 !default;
+$gray-dark:             #8b8b8b !default;
 $gray:                  #979CA6 !default;
-$grayLight:             #E8EBF0 !default;
-$grayLighter:           #F8F9FA !default;
+$gray-light:            #E8EBF0 !default;
+$gray-lighter:          #F8F9FA !default;
 $white:                 #fff !default;
 
 // Colors
@@ -30,51 +30,51 @@ $white:                 #fff !default;
 
 $jemk_darkgreen:        darken($jemk_green, 20%);
 
-$blue:                  $emk_darkblue;
-$blueDark:              darken($blue, 10%) !default;
+$blue:                  $jemk_darkblue;
+$blue-dark:             darken($blue, 10%) !default;
 $green:                 $jemk_green !default;
-$greenDark:             $jemk_darkgreen;
+$green-dark:            $jemk_darkgreen;
 
 $orange:                #DC795B;
-$orangeDark:            #C75B3B;
+$orange-dark:           #C75B3B;
 $purple:                $jemk_darkblue;
-$purpleDark:            darken($jemk_darkblue, 20%);
+$purple-dark:           darken($jemk_darkblue, 20%);
 
 $red:                   $orange !default;
 
-$textColor:             $black !default;
-$borderColor:           $grayLight !default;
+$text-color:            $black !default;
+$border-color:          $gray-light !default;
 
-$pageBackground:        $jemk_darkblue;
-$contentBackground:     $grayLight;
-$footerBackground:      $white;
-$bodyBackground:        $jemk_darkblue;
+$page-background:       $jemk_darkblue;
+$content-background:    $gray-light;
+$footer-background:     $white;
+$body-background:       $jemk_darkblue;
 
-$focusColor:            $purple;
-$shadowColor:           darken($pageBackground, 10%);
-$linkColor:             $jemk_darkgreen !default;
-$linkColorHover:        $jemk_darkblue !default;
+$focus-color:           $purple;
+$shadow-color:          darken($page-background, 10%);
+$link-color:            $jemk_darkgreen !default;
+$link-color-hover:      $jemk_darkblue !default;
 
-$footerColor:           $jemk_black;
-$footerColorHover:      $jemk_green;
+$footer-color:          $jemk_black;
+$footer-color-hover:    $jemk_green;
 
-$tableColorHover:       $emk_lightblue;
+$table-color-hover:     $jemk_lightblue;
 
 // Typography
 // -------------------------
 
-$sansFontFamily:        'Verdana', sans-serif;
-$headingFontFamily:     'Verdana', sans-serif; //'Quicksand', $sansFontFamily !default;
-$baseFontFamily:        'Verdana', sans-serif; //'Varela Round', $sansFontFamily !default;
-$headingsFontWeight:    bold !default; // could be "normal" instead of browser default, "bold"
+$sans-font-family:      'Verdana', sans-serif;
+$heading-font-family:   'Verdana', sans-serif; //'Quicksand', $sans-font-family !default;
+$base-font-family:      'Verdana', sans-serif; //'Varela Round', $sans-font-family !default;
+$headings-font-weight:  bold !default; // could be "normal" instead of browser default, "bold"
 
 // Decoration
 // -------------------------
-$borderRadius:           6px;
+$border-radius:         6px;
 
 // Rhythm
 // -------------------------
-$vSpace:                24px;
+$v-space:               24px;
 
 
 // FLUID GRID
@@ -82,18 +82,18 @@ $vSpace:                24px;
 
 // Default
 // -------------------------
-$fluidGridColumnWidth:         6.382978723% !default;
-$fluidGridGutterWidth:         2.127659574% !default;
+$fluid-grid-column-width:         6.382978723% !default;
+$fluid-grid-gutter-width:         2.127659574% !default;
 
 // Portrait tablet to default desktop
 // -------------------------
-$fluidGridColumnWidthTablet:   5.801104972% !default;
-$fluidGridGutterWidthTablet:   2.762430939% !default;
+$fluid-grid-column-width-tablet:   5.801104972% !default;
+$fluid-grid-gutter-width-tablet:   2.762430939% !default;
 
 // Large desktop and up
 // -------------------------
-$fluidGridColumnWidthLarge:    5.982905983% !default;
-$fluidGridGutterWidthLarge:    2.564102564% !default;
+$fluid-grid-column-width-large:    5.982905983% !default;
+$fluid-grid-gutter-width-large:    2.564102564% !default;
 
 
 // RESPONSIVE DESIGN
@@ -101,7 +101,7 @@ $fluidGridGutterWidthLarge:    2.564102564% !default;
 
 // Media widths
 // -------------------------
-$mediaPhone:              480px !default;
-$mediaTablet:             768px !default;
-$mediaDesktop:            980px !default;
-$mediaLarge:              1200px !default; // and upper
+$media-phone:              480px !default;
+$media-tablet:             768px !default;
+$media-desktop:            980px !default;
+$media-large:              1200px !default; // and upper
