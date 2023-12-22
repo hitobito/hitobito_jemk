@@ -59,7 +59,7 @@ of Jemk.
         * Coach: [:layer_and_below_full, :approve_applications, :contact_data]
         * Kassier: [:layer_read, :finance]
         * Materialverantwortliche/-r: [:layer_and_below_read, :contact_data]
-        * Aktivmitglied: [:group_and_below_read]
+        * Aktivmitglied: []
         * Passivmitglied: []
       * Vorstand
         * Präsident/-in: [:layer_full, :contact_data]
@@ -70,7 +70,7 @@ of Jemk.
         * Mitglied: [:group_and_below_read]
       * Mitglieder
         * Leiter/-in: [:group_and_below_full, :contact_data]
-        * Aktivmitglied: [:group_and_below_read]
+        * Aktivmitglied: []
         * Passivmitglied: []
 
 (Output of rake app:hitobito:roles)
