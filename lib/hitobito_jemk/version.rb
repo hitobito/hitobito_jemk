@@ -7,5 +7,5 @@
 
 
 module HitobitoJemk
-  VERSION = '1.30.9'
+  VERSION = '2.0.0'
 end
