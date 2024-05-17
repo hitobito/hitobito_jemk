@@ -5,14 +5,14 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_jemk.
 
-class Group::DachverbandGeschaeftsstelle < ::Group
+class Group::DachverbandGeschaeftsstelle < Group
   class Geschaeftsleiter < ::Role
-    self.permissions = [:admin, :layer_and_below_full, :impersonation, :contact_data]
+    self.permissions = [:admin, :layer_and_below_full, :impersonation, :contact_data, :finance]
     self.two_factor_authentication_enforced = true
   end
 
   class Angestellter < ::Role
-    self.permissions = [:admin, :layer_and_below_full, :impersonation, :contact_data]
+    self.permissions = [:admin, :layer_and_below_full, :impersonation, :contact_data, :finance]
     self.two_factor_authentication_enforced = true
   end
 

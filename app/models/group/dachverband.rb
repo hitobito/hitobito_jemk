@@ -6,7 +6,7 @@
 #  https://github.com/hitobito/hitobito_jemk.
 
 
-class Group::Dachverband < ::Group
+class Group::Dachverband < Group
   self.layer = true
 
   children Group::DachverbandVorstand,

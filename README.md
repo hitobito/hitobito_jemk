@@ -12,14 +12,14 @@ of Jemk.
 <!-- roles:start -->
     * Dachverband
       * Dachverband
-        * Administrator/-in: [:admin, :layer_and_below_full, :impersonation]
+        * Administrator/-in: 2FA [:admin, :layer_and_below_full, :impersonation]
       * Vorstand
         * Präsident/-in: [:layer_read, :group_and_below_full, :contact_data]
         * Kassier/-in: [:layer_and_below_read, :finance, :contact_data]
         * Mitglied: [:layer_read, :contact_data]
       * Geschäftsstelle
-        * Geschäftsleiter/-in: [:admin, :layer_and_below_full, :impersonation, :contact_data]
-        * Angestellte/-r: [:admin, :layer_and_below_full, :impersonation, :contact_data]
+        * Geschäftsleiter/-in: 2FA [:admin, :layer_and_below_full, :impersonation, :contact_data, :finance]
+        * Angestellte/-r: 2FA [:admin, :layer_and_below_full, :impersonation, :contact_data, :finance]
       * Gremium
         * Leiter/-in: [:layer_read, :group_and_below_full, :contact_data]
         * Kassier/-in: [:layer_read, :finance]

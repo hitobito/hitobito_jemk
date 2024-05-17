@@ -19,7 +19,7 @@ describe GroupAbility do
     let(:group) { groups(:js_arcus) }
 
     context 'Hauptleiter' do
-      let(:role_name) { "Group::Ortsjungschar::Hauptleiter" }
+      let(:role_name) { 'Group::Ortsjungschar::Hauptleiter' }
 
       it 'may read on same group' do
         is_expected.to be_able_to(:show, group)
@@ -43,7 +43,7 @@ describe GroupAbility do
     end
 
     context 'Adressverwalter' do
-      let(:role_name) { "Group::Ortsjungschar::Leiter" }
+      let(:role_name) { 'Group::Ortsjungschar::Leiter' }
 
       it 'may read on same group' do
         is_expected.to be_able_to(:show, group)
@@ -67,7 +67,7 @@ describe GroupAbility do
     end
 
     context 'Adressverwalter' do
-      let(:role_name) { "Group::Ortsjungschar::Adressverwalter" }
+      let(:role_name) { 'Group::Ortsjungschar::Adressverwalter' }
 
       it 'may read on same group' do
         is_expected.to be_able_to(:show, group)
@@ -91,7 +91,7 @@ describe GroupAbility do
     end
 
     context 'Coach' do
-      let(:role_name) { "Group::Ortsjungschar::Coach" }
+      let(:role_name) { 'Group::Ortsjungschar::Coach' }
 
       it 'may read on same group' do
         is_expected.to be_able_to(:show, group)
@@ -115,7 +115,7 @@ describe GroupAbility do
     end
 
     context 'Kassier' do
-      let(:role_name) { "Group::Ortsjungschar::Kassier" }
+      let(:role_name) { 'Group::Ortsjungschar::Kassier' }
 
       it 'may read on same group' do
         is_expected.to be_able_to(:show, group)
@@ -139,7 +139,7 @@ describe GroupAbility do
     end
 
     context 'Materialverantwortlicher' do
-      let(:role_name) { "Group::Ortsjungschar::Materialverantwortlicher" }
+      let(:role_name) { 'Group::Ortsjungschar::Materialverantwortlicher' }
 
       it 'may read on same group' do
         is_expected.to be_able_to(:show, group)
@@ -219,7 +219,7 @@ describe GroupAbility do
     let(:group) { groups(:gremium_projektgruppe_14) }
 
     context 'Leiter' do
-      let(:role_name) { "Group::OrtsjungscharGremium::Leiter" }
+      let(:role_name) { 'Group::OrtsjungscharGremium::Leiter' }
 
       it 'may read on same group' do
         is_expected.to be_able_to(:show, group)
@@ -243,7 +243,7 @@ describe GroupAbility do
     end
 
     context 'Mitglied' do
-      let(:role_name) { "Group::OrtsjungscharGremium::Mitglied" }
+      let(:role_name) { 'Group::OrtsjungscharGremium::Mitglied' }
 
       it 'may read on same group' do
         is_expected.to be_able_to(:show, group)
@@ -271,7 +271,7 @@ describe GroupAbility do
     let(:group) { groups(:mitglieder_15) }
 
     context 'Leiter' do
-      let(:role_name) { "Group::OrtsjungscharMitglieder::Leiter" }
+      let(:role_name) { 'Group::OrtsjungscharMitglieder::Leiter' }
 
       it 'may read on same group' do
         is_expected.to be_able_to(:show, group)
