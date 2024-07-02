@@ -1,6 +1,6 @@
 # Hitobito JEMK Changelog
 
-## unreleased
+## Version 2.2
 
 * Berechtigungen für Rechnungserstellung hinzugefügt (hitobito_jemk#22)
 
