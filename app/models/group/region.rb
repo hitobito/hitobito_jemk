@@ -6,14 +6,13 @@
 #  https://github.com/hitobito/hitobito_jemk.
 
 class Group::Region < ::Group
-
   self.layer = true
 
   children Group::RegionVorstand,
-           Group::RegionGeschaeftsstelle,
-           Group::RegionGremium,
-           Group::RegionMitglieder,
-           Group::Ortsjungschar
+    Group::RegionGeschaeftsstelle,
+    Group::RegionGremium,
+    Group::RegionMitglieder,
+    Group::Ortsjungschar
 
   self.default_children = [
     Group::RegionVorstand,
@@ -33,5 +32,4 @@ class Group::Region < ::Group
   end
 
   roles Administrator
-
 end

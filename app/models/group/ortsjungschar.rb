@@ -9,8 +9,8 @@ class Group::Ortsjungschar < ::Group
   self.layer = true
 
   children Group::OrtsjungscharVorstand,
-           Group::OrtsjungscharGremium,
-           Group::OrtsjungscharMitglieder
+    Group::OrtsjungscharGremium,
+    Group::OrtsjungscharMitglieder
   self.default_children = [
     Group::OrtsjungscharVorstand,
     Group::OrtsjungscharGremium,
@@ -57,5 +57,5 @@ class Group::Ortsjungschar < ::Group
   end
 
   roles Hauptleiter, Leiter, Adressverwalter, Coach, Kassier, Materialverantwortlicher,
-        Aktivmitglied, Passivmitglied
+    Aktivmitglied, Passivmitglied
 end

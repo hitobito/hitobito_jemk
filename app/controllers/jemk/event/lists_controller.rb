@@ -6,7 +6,6 @@
 #  https://github.com/hitobito/hitobito_jemk.
 
 module Jemk::Event::ListsController
-
   def camps
     authorize!(:list_available, Event::Camp)
 
@@ -27,15 +26,14 @@ module Jemk::Event::ListsController
       .upcoming
       .in_hierarchy(current_user)
       .includes(:dates, :groups, :events_groups)
-      .order('event_dates.start_at ASC')
+      .order("event_dates.start_at ASC")
   end
 
   def upcoming_user_events_of_type(type, allow_null: false)
     condition = OrCondition.new
-    condition.or('events.type = ?', type)
-    condition.or('events.type IS NULL') if allow_null
+    condition.or("events.type = ?", type)
+    condition.or("events.type IS NULL") if allow_null
 
     upcoming_user_events.where(condition.to_a)
   end
-
 end

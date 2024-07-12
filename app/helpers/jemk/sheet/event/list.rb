@@ -13,11 +13,10 @@ module Jemk::Sheet::Event::List
   end
 
   def render_left_nav_with_camps
-    if view.nav_left == 'camps'
-      view.render 'nav_left_events'
+    if view.nav_left == "camps"
+      view.render "nav_left_events"
     else
       render_left_nav_without_camps
     end
   end
-
 end

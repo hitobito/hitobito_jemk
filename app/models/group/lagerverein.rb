@@ -6,7 +6,6 @@
 #  https://github.com/hitobito/hitobito_jemk.
 
 class Group::Lagerverein < ::Group
-
   self.layer = true
 
   children Group::LagervereinVerein

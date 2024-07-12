@@ -5,16 +5,15 @@
 #  or later. See the COPYING file at the top-level directory or at
 #  https://github.com/hitobito/hitobito_jemk.
 
-
 class Group::Dachverband < Group
   self.layer = true
 
   children Group::DachverbandVorstand,
-           Group::DachverbandGeschaeftsstelle,
-           Group::DachverbandGremium,
-           Group::DachverbandMitglieder,
-           Group::Lagerverein,
-           Group::Region
+    Group::DachverbandGeschaeftsstelle,
+    Group::DachverbandGremium,
+    Group::DachverbandMitglieder,
+    Group::Lagerverein,
+    Group::Region
 
   self.default_children = [
     Group::DachverbandVorstand,
