@@ -43,13 +43,13 @@ describe :self_registration do
 
     expect do
       find_all('.btn-toolbar.bottom button[type="submit"]').first.click # submit
+      expect(page).to have_text(
+        'Du hast Dich erfolgreich registriert. Du erhältst in Kürze eine E-Mail mit der Anleitung, '\
+        'wie Du Deinen Account freischalten kannst.'
+      )
+
     end.to change { Person.count }.by(1)
        .and change { ActionMailer::Base.deliveries.count }.by(1)
-
-    is_expected.to have_text(
-      'Du hast Dich erfolgreich registriert. Du erhältst in Kürze eine E-Mail mit der Anleitung, '\
-      'wie Du Deinen Account freischalten kannst.'
-    )
 
     person = Person.find_by(email: 'max.muster@hitobito.example.com')
     expect(person).to be_present
