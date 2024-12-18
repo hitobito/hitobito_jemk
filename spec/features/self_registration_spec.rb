@@ -13,11 +13,11 @@ describe :self_registration do
   class Group::SelfRegistrationGroup < Group # rubocop:disable Lint/ConstantDefinitionInBlock
     self.layer = true
 
-    class ReadOnly < ::Role
-      self.permissions = [:group_read]
+    class Guest < ::Role
+      self.permissions = []
     end
 
-    roles ReadOnly
+    roles Guest
   end
 
   let(:group) do
