@@ -33,10 +33,21 @@ describe Event::ApplicationMarketController, js: true do
       expect(page).to have_text('FrüLa 2033')
       expect(page).to have_css("#applications a", text: participation.person.to_s(:list))
       all("#applications #event_participation_#{participation.id} td").first.find('a').click
-      expect(page).not_to have_css("#participants a", text: participation.person.to_s(:list))
+
+      expect(page).to have_text "Bestätigen ohne E-Mail"
+      click_on "Bestätigen ohne E-Mail"
+      sleep(0.5)
+      click_on "Abbrechen"
+      expect(page).to have_no_text "Bestätigen ohne E-Mail"
 
       expect(page).to have_css("#participants a", text: participation.person.to_s(:list))
       all("#participants #event_participation_#{participation.id} td").last.find('a').click
+
+      expect(page).to have_text "Bestätigen ohne E-Mail"
+      click_on "Bestätigen ohne E-Mail"
+      sleep(0.5)
+      click_on "Abbrechen"
+      expect(page).to have_no_text "Bestätigen ohne E-Mail"
 
       expect(page).not_to have_css("#participants a", text: participation.person.to_s(:list))
       expect(page).to have_css("#applications a", text: participation.person.to_s(:list))
