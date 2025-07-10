@@ -184,10 +184,6 @@ de:
         one: Hauptleitung
         # description: TODO
 
-      group/ortsjungschar/leiter:
-        one: Leiter/-in
-        # description: TODO
-
       group/ortsjungschar/adressverwalter:
         one: Adressverwaltung
         # description: TODO
@@ -202,14 +198,6 @@ de:
 
       group/ortsjungschar/materialverantwortlicher:
         one: Materialverantwortliche/-r
-        # description: TODO
-
-      group/ortsjungschar/aktivmitglied:
-        one: Aktivmitglied
-        # description: TODO
-
-      group/ortsjungschar/passivmitglied:
-        one: Passivmitglied
         # description: TODO
 
       group/ortsjungschar_vorstand/praesident:
@@ -230,10 +218,6 @@ de:
 
       group/ortsjungschar_gremium/mitglied:
         one: Mitglied
-        # description: TODO
-
-      group/ortsjungschar_mitglieder/leiter:
-        one: Leiter/-in
         # description: TODO
 
       group/ortsjungschar_mitglieder/aktivmitglied:
