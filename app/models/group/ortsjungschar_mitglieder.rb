@@ -6,10 +6,6 @@
 #  https://github.com/hitobito/hitobito_jemk.
 
 class Group::OrtsjungscharMitglieder < ::Group
-  class Leiter < ::Role
-    self.permissions = [:group_and_below_full, :contact_data]
-  end
-
   class Aktivmitglied < ::Role
     self.permissions = []
   end
@@ -18,5 +14,5 @@ class Group::OrtsjungscharMitglieder < ::Group
     self.permissions = []
   end
 
-  roles Leiter, Aktivmitglied, Passivmitglied
+  roles Aktivmitglied, Passivmitglied
 end

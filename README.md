@@ -27,14 +27,14 @@ of Jemk.
       * Mitglieder
         * Adressverwalter/-in: [:group_and_below_full]
         * Mitglied: []
-    * Lagerverein
+    * Lagerverein < Dachverband
       * Lagerverein
         * Administrator/-in: [:layer_and_below_full]
       * Verein
         * Leiter/-in: [:layer_read, :group_and_below_full, :contact_data]
         * Kassier/-in: [:layer_read, :finance]
         * Mitglied: [:layer_read]
-    * Region
+    * Region < Dachverband
       * Region
         * Administrator/-in: [:layer_and_below_full]
       * Vorstand
@@ -51,16 +51,13 @@ of Jemk.
       * Mitglieder
         * Adressverwalter/-in: [:group_and_below_full]
         * Mitglied: []
-    * Ortsjungschar
+    * Ortsjungschar < Region
       * Ortsjungschar
         * Hauptleitung: [:layer_and_below_full, :contact_data]
-        * Leiter/-in: [:group_and_below_full, :contact_data]
         * Adressverwaltung: [:group_and_below_full, :contact_data]
         * Coach: [:layer_and_below_full, :approve_applications, :contact_data]
         * Kassier: [:layer_read, :finance]
         * Materialverantwortliche/-r: [:layer_and_below_read, :contact_data]
-        * Aktivmitglied: []
-        * Passivmitglied: []
       * Vorstand
         * Präsident/-in: [:layer_full, :contact_data]
         * Sekretär/-in: [:layer_full, :contact_data]
@@ -69,9 +66,7 @@ of Jemk.
         * Leiter/-in: [:group_and_below_full, :contact_data]
         * Mitglied: [:group_and_below_read]
       * Mitglieder
-        * Leiter/-in: [:group_and_below_full, :contact_data]
         * Aktivmitglied: []
         * Passivmitglied: []
-
 (Output of rake app:hitobito:roles)
 <!-- roles:end -->

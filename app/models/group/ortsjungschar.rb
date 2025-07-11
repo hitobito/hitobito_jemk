@@ -28,10 +28,6 @@ class Group::Ortsjungschar < ::Group
     self.permissions = [:layer_and_below_full, :contact_data]
   end
 
-  class Leiter < ::Role
-    self.permissions = [:group_and_below_full, :contact_data]
-  end
-
   class Adressverwalter < ::Role
     self.permissions = [:group_and_below_full, :contact_data]
   end
@@ -48,14 +44,5 @@ class Group::Ortsjungschar < ::Group
     self.permissions = [:layer_and_below_read, :contact_data]
   end
 
-  class Aktivmitglied < ::Role
-    self.permissions = []
-  end
-
-  class Passivmitglied < ::Role
-    self.permissions = []
-  end
-
-  roles Hauptleiter, Leiter, Adressverwalter, Coach, Kassier, Materialverantwortlicher,
-    Aktivmitglied, Passivmitglied
+  roles Hauptleiter, Adressverwalter, Coach, Kassier, Materialverantwortlicher
 end

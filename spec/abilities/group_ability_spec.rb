@@ -43,30 +43,6 @@ describe GroupAbility do
     end
 
     context 'Adressverwalter' do
-      let(:role_name) { 'Group::Ortsjungschar::Leiter' }
-
-      it 'may read on same group' do
-        is_expected.to be_able_to(:show, group)
-      end
-
-      it 'may not index people on same group' do
-        is_expected.to be_able_to(:index_people, group)
-      end
-
-      it 'may not update on same group' do
-        is_expected.to be_able_to(:update, group)
-      end
-
-      it 'may not destroy same group' do
-        is_expected.not_to be_able_to(:destroy, group)
-      end
-
-      it 'may read invoices on same group' do
-        is_expected.not_to be_able_to(:index_invoices, group)
-      end
-    end
-
-    context 'Adressverwalter' do
       let(:role_name) { 'Group::Ortsjungschar::Adressverwalter' }
 
       it 'may read on same group' do
@@ -157,32 +133,6 @@ describe GroupAbility do
         is_expected.not_to be_able_to(:destroy, group)
       end
     end
-
-    %w(Aktivmitglied Passivmitglied).each do |role_class|
-      context role_class do
-        let(:role_name) { "Group::Ortsjungschar::#{role_class}" }
-
-        it 'may read on same group' do
-          is_expected.to be_able_to(:show, group)
-        end
-
-        it 'may not index people on same group' do
-          is_expected.not_to be_able_to(:index_people, group)
-        end
-
-        it 'may not update on same group' do
-          is_expected.not_to be_able_to(:update, group)
-        end
-
-        it 'may not destroy same group' do
-          is_expected.not_to be_able_to(:destroy, group)
-        end
-
-        it 'may read invoices on same group' do
-          is_expected.not_to be_able_to(:index_invoices, group)
-        end
-      end
-    end
   end
 
   describe 'OrtsjungscharVorstand' do
@@ -269,30 +219,6 @@ describe GroupAbility do
 
   describe 'OrtsjungscharMitglieder' do
     let(:group) { groups(:mitglieder_15) }
-
-    context 'Leiter' do
-      let(:role_name) { 'Group::OrtsjungscharMitglieder::Leiter' }
-
-      it 'may read on same group' do
-        is_expected.to be_able_to(:show, group)
-      end
-
-      it 'may not index people on same group' do
-        is_expected.to be_able_to(:index_people, group)
-      end
-
-      it 'may not update on same group' do
-        is_expected.to be_able_to(:update, group)
-      end
-
-      it 'may not destroy same group' do
-        is_expected.not_to be_able_to(:destroy, group)
-      end
-
-      it 'may read invoices on same group' do
-        is_expected.not_to be_able_to(:index_invoices, group)
-      end
-    end
 
     %w(Aktivmitglied Passivmitglied).each do |role_class|
       context role_class do
