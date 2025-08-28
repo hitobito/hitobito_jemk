@@ -7,6 +7,7 @@
 
 class Event::Camp < Event
   self.used_attributes += [:waiting_list]
+  self.used_attributes -= [:guest_limit]
 
   self.supports_applications = true
 
