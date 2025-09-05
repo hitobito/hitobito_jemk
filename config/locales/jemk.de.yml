@@ -233,6 +233,9 @@ de:
         other: Lager
 
     attributes:
+      event/participation:
+        additional_information: Bemerkungen
+
       person:
         nickname: Jungscharname
 
