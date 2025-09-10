@@ -6,7 +6,7 @@
 #  https://github.com/hitobito/hitobito_jemk.
 
 require "wagons"
-# require 'your_wagon_dependencies'
+require "hitobito_youth"
 require "hitobito_jemk/wagon"
 
 module HitobitoJemk
