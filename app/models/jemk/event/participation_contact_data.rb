@@ -9,6 +9,6 @@ module Jemk::Event::ParticipationContactData
   extend ActiveSupport::Concern
 
   included do
-    self.contact_attrs -= [:company_name, :company]
+    Event.possible_contact_attrs -= [:company_name, :company]
   end
 end
