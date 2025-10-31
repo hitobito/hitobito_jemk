@@ -31,7 +31,7 @@ module Jemk::Event::ListsController
 
   def upcoming_user_events_of_type(type, allow_null: false)
     condition = OrCondition.new
-    condition.or("events.type = ?", type)
+    condition.or("events.type = ?", type.sti_name)
     condition.or("events.type IS NULL") if allow_null
 
     upcoming_user_events.where(condition.to_a)
