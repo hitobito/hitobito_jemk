@@ -38,7 +38,7 @@ describe GroupAbility do
       end
 
       it 'may read invoices on same group' do
-        is_expected.not_to be_able_to(:index_invoices, group)
+        is_expected.not_to be_able_to(:index_issued_invoices, group)
       end
     end
 
@@ -62,7 +62,7 @@ describe GroupAbility do
       end
 
       it 'may read invoices on same group' do
-        is_expected.not_to be_able_to(:index_invoices, group)
+        is_expected.not_to be_able_to(:index_issued_invoices, group)
       end
     end
 
@@ -86,7 +86,7 @@ describe GroupAbility do
       end
 
       it 'may read invoices on same group' do
-        is_expected.not_to be_able_to(:index_invoices, group)
+        is_expected.not_to be_able_to(:index_issued_invoices, group)
       end
     end
 
@@ -110,7 +110,7 @@ describe GroupAbility do
       end
 
       it 'may read invoices on same group' do
-        is_expected.to be_able_to(:index_invoices, group)
+        is_expected.to be_able_to(:index_issued_invoices, group)
       end
     end
 
@@ -159,7 +159,7 @@ describe GroupAbility do
         end
 
         it 'may read invoices on same group' do
-          is_expected.not_to be_able_to(:index_invoices, group)
+          is_expected.not_to be_able_to(:index_issued_invoices, group)
         end
       end
     end
@@ -188,7 +188,7 @@ describe GroupAbility do
       end
 
       it 'may read invoices on same group' do
-        is_expected.not_to be_able_to(:index_invoices, group)
+        is_expected.not_to be_able_to(:index_issued_invoices, group)
       end
     end
 
@@ -212,7 +212,7 @@ describe GroupAbility do
       end
 
       it 'may read invoices on same group' do
-        is_expected.not_to be_able_to(:index_invoices, group)
+        is_expected.not_to be_able_to(:index_issued_invoices, group)
       end
     end
   end
@@ -241,7 +241,7 @@ describe GroupAbility do
         end
 
         it 'may read invoices on same group' do
-          is_expected.not_to be_able_to(:index_invoices, group)
+          is_expected.not_to be_able_to(:index_issued_invoices, group)
         end
       end
     end
