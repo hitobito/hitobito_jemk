@@ -80,6 +80,10 @@ de:
         one: Administrator/-in
         # description: TODO
 
+      group/dachverband/coach:
+        one: Coach
+        # description: TODO
+
       group/dachverband_vorstand/praesident:
         one: Präsident/-in
         # description: TODO
@@ -90,6 +94,10 @@ de:
 
       group/dachverband_vorstand/mitglied:
         one: Mitglied
+        # description: TODO
+
+      group/dachverband_vorstand/teambegleitung:
+        one: Teambegleitung
         # description: TODO
 
       group/dachverband_geschaeftsstelle/geschaeftsleiter:
@@ -110,6 +118,10 @@ de:
 
       group/dachverband_gremium/mitglied:
         one: Mitglied
+        # description: TODO
+
+      group/dachverband_gremium/teambegleitung:
+        one: Teambegleitung
         # description: TODO
 
       group/dachverband_mitglieder/adressverwalter:
@@ -168,6 +180,14 @@ de:
         one: Administrator/-in
         # description: TODO
 
+      group/lagerverein/coach:
+        one: Coach
+        # description: TODO
+
+      group/lagerverein/teambegleitung:
+        one: Teambegleitung
+        # desvorstandcription: TODO
+
       group/lagerverein_verein/leiter:
         one: Leiter/-in
         # description: TODO
@@ -178,6 +198,10 @@ de:
 
       group/lagerverein_verein/mitglied:
         one: Mitglied
+        # description: TODO
+
+      group/lagerverein_verein/helfer:
+        one: Helfer
         # description: TODO
 
       group/ortsjungschar/hauptleiter:
@@ -194,6 +218,10 @@ de:
 
       group/ortsjungschar/kassier:
         one: Kassier
+        # description: TODO
+
+      group/ortsjungschar/teambegleitung:
+        one: Teambegleitung
         # description: TODO
 
       group/ortsjungschar/materialverantwortlicher:
