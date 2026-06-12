@@ -21,5 +21,12 @@ class Group::Lagerverein < ::Group
     self.permissions = [:layer_and_below_full]
   end
 
-  roles Administrator
+  class Coach < ::Role
+    self.permissions = [:layer_full, :approve_applications, :contact_data]
+  end
+
+  class Teambegleitung < ::Role
+  end
+
+  roles Administrator, Coach, Teambegleitung
 end

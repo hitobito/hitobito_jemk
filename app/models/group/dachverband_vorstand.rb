@@ -18,5 +18,8 @@ class Group::DachverbandVorstand < ::Group
     self.permissions = [:layer_read, :contact_data]
   end
 
-  roles Praesident, Kassier, Mitglied
+  class Teambegleitung < ::Role
+  end
+
+  roles Praesident, Kassier, Mitglied, Teambegleitung
 end

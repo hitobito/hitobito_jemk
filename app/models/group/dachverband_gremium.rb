@@ -18,5 +18,8 @@ class Group::DachverbandGremium < ::Group
     self.permissions = [:layer_read]
   end
 
-  roles Leiter, Kassier, Mitglied
+  class Teambegleitung < ::Role
+  end
+
+  roles Leiter, Kassier, Mitglied, Teambegleitung
 end

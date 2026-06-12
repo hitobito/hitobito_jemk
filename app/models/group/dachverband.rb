@@ -33,5 +33,9 @@ class Group::Dachverband < Group
     self.two_factor_authentication_enforced = true
   end
 
-  roles Administrator
+  class Coach < ::Role
+    self.permissions = [:layer_full, :approve_applications, :contact_data]
+  end
+
+  roles Administrator, Coach
 end

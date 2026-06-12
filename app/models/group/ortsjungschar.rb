@@ -44,5 +44,8 @@ class Group::Ortsjungschar < ::Group
     self.permissions = [:layer_and_below_read, :contact_data]
   end
 
-  roles Hauptleiter, Adressverwalter, Coach, Kassier, Materialverantwortlicher
+  class Teambegleitung < ::Role
+  end
+
+  roles Hauptleiter, Adressverwalter, Coach, Kassier, Materialverantwortlicher, Teambegleitung
 end

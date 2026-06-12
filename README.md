@@ -13,10 +13,12 @@ of Jemk.
     * Dachverband
       * Dachverband
         * Administrator/-in: 2FA [:admin, :layer_and_below_full, :impersonation]
+        * Coach: [:layer_full, :approve_applications, :contact_data]
       * Vorstand
         * Präsident/-in: [:layer_read, :group_and_below_full, :contact_data]
         * Kassier/-in: [:layer_and_below_read, :finance, :contact_data]
         * Mitglied: [:layer_read, :contact_data]
+        * Teambegleitung: []
       * Geschäftsstelle
         * Geschäftsleiter/-in: 2FA [:admin, :layer_and_below_full, :impersonation, :contact_data, :finance]
         * Angestellte/-r: 2FA [:admin, :layer_and_below_full, :impersonation, :contact_data, :finance]
@@ -24,16 +26,20 @@ of Jemk.
         * Leiter/-in: [:layer_read, :group_and_below_full, :contact_data]
         * Kassier/-in: [:layer_read, :finance]
         * Mitglied: [:layer_read]
+        * Teambegleitung: []
       * Mitglieder
         * Adressverwalter/-in: [:group_and_below_full]
         * Mitglied: []
     * Lagerverein < Dachverband
       * Lagerverein
         * Administrator/-in: [:layer_and_below_full]
+        * Coach: [:layer_full, :approve_applications, :contact_data]
+        * Teambegleitung: []
       * Verein
         * Leiter/-in: [:layer_read, :group_and_below_full, :contact_data]
         * Kassier/-in: [:layer_read, :finance]
         * Mitglied: [:layer_read]
+        * Helfer: []
     * Region < Dachverband
       * Region
         * Administrator/-in: [:layer_and_below_full]
@@ -58,6 +64,7 @@ of Jemk.
         * Coach: [:layer_and_below_full, :approve_applications, :contact_data]
         * Kassier: [:layer_read, :finance]
         * Materialverantwortliche/-r: [:layer_and_below_read, :contact_data]
+        * Teambegleitung: []
       * Vorstand
         * Präsident/-in: [:layer_full, :contact_data]
         * Sekretär/-in: [:layer_full, :contact_data]
@@ -68,5 +75,6 @@ of Jemk.
       * Mitglieder
         * Aktivmitglied: []
         * Passivmitglied: []
+
 (Output of rake app:hitobito:roles)
 <!-- roles:end -->
