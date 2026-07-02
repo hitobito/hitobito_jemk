@@ -136,6 +136,14 @@ de:
         one: Administrator/-in
         # description: TODO
 
+      group/region/coach:
+        one: Coach
+        # description: TODO
+
+      group/region/teambegleitung:
+        one: Teambegleitung
+        # description: TODO
+
       group/region_vorstand/praesident:
         one: Präsident/-in
         # description: TODO
@@ -201,7 +209,7 @@ de:
         # description: TODO
 
       group/lagerverein_verein/helfer:
-        one: Helfer
+        one: Helfer /-in
         # description: TODO
 
       group/ortsjungschar/hauptleiter:
