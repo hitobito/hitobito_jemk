@@ -39,10 +39,12 @@ of Jemk.
         * Leiter/-in: [:layer_read, :group_and_below_full, :contact_data]
         * Kassier/-in: [:layer_read, :finance]
         * Mitglied: [:layer_read]
-        * Helfer: []
+        * Helfer /-in: []
     * Region < Dachverband
       * Region
         * Administrator/-in: [:layer_and_below_full]
+        * Coach: [:layer_full, :approve_applications, :contact_data]
+        * Teambegleitung: []
       * Vorstand
         * Präsident/-in: [:layer_and_below_read, :group_and_below_full, :contact_data]
         * Kassier/-in: [:layer_and_below_read, :finance, :contact_data]
