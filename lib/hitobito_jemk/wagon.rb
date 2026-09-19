@@ -24,7 +24,6 @@ module HitobitoJemk
 
       # Models
       Group.include Jemk::Group
-      Person.include Jemk::Person
       Event::ParticipationContactData.include Jemk::Event::ParticipationContactData
 
       # Abilities
