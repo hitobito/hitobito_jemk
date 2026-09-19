@@ -9,9 +9,6 @@ module Jemk::Person
   extend ActiveSupport::Concern
 
   included do
-    used_attributes.delete(:company)
-    used_attributes.delete(:company_name)
-
     Person::FILTER_ATTRS.delete(:company_name)
   end
 end
